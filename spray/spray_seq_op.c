@@ -68,7 +68,7 @@ void spray_seq_op_loop(void) {
 int main()
 {
 	int i = 0;
-    while (i++ < 2) {
+    while (i++ < 5) {
         fork();
         
     }

@@ -1,8 +1,8 @@
 Attaching 2 probes...
 @btopen[
-    cleanup_module+328175
-    cleanup_module+328175
-    cleanup_module+332536
+    ovl_exit+202461
+    ovl_exit+202461
+    ovl_exit+208446
     single_open+5
     stat_open+47
     proc_reg_open+59
@@ -15,11 +15,11 @@ Attaching 2 probes...
     __x64_sys_openat+85
     do_syscall_64+97
     entry_SYSCALL_64_after_hwframe+68
-]: 11
+]: 17
 @btopen[
-    cleanup_module+328175
-    cleanup_module+328175
-    cleanup_module+332536
+    ovl_exit+202461
+    ovl_exit+202461
+    ovl_exit+208446
     single_open+5
     proc_reg_open+155
     do_dentry_open+340
@@ -31,11 +31,11 @@ Attaching 2 probes...
     __x64_sys_openat+85
     do_syscall_64+97
     entry_SYSCALL_64_after_hwframe+68
-]: 26
+]: 56
 @btopen[
-    cleanup_module+328175
-    cleanup_module+328175
-    cleanup_module+332536
+    ovl_exit+202461
+    ovl_exit+202461
+    ovl_exit+208446
     single_open+5
     do_dentry_open+340
     vfs_open+45
@@ -46,12 +46,12 @@ Attaching 2 probes...
     __x64_sys_openat+85
     do_syscall_64+97
     entry_SYSCALL_64_after_hwframe+68
-]: 2099842
+]: 4197082
 
 @btrelease[
-    cleanup_module+309755
-    cleanup_module+309755
-    cleanup_module+316148
+    ovl_exit+75577
+    ovl_exit+75577
+    ovl_exit+192058
     single_release+5
     proc_reg_release+109
     __fput+156
@@ -64,9 +64,9 @@ Attaching 2 probes...
     entry_SYSCALL_64_after_hwframe+68
 ]: 10
 @btrelease[
-    cleanup_module+309755
-    cleanup_module+309755
-    cleanup_module+316148
+    ovl_exit+75577
+    ovl_exit+75577
+    ovl_exit+192058
     single_release+5
     __fput+156
     ____fput+14
@@ -76,11 +76,11 @@ Attaching 2 probes...
     syscall_exit_to_user_mode+39
     do_syscall_64+110
     entry_SYSCALL_64_after_hwframe+68
-]: 11
+]: 17
 @btrelease[
-    cleanup_module+309755
-    cleanup_module+309755
-    cleanup_module+316148
+    ovl_exit+75577
+    ovl_exit+75577
+    ovl_exit+192058
     single_release+5
     proc_reg_release+109
     __fput+156
@@ -91,11 +91,11 @@ Attaching 2 probes...
     syscall_exit_to_user_mode+39
     do_syscall_64+110
     entry_SYSCALL_64_after_hwframe+68
-]: 16
+]: 46
 @btrelease[
-    cleanup_module+309755
-    cleanup_module+309755
-    cleanup_module+316148
+    ovl_exit+75577
+    ovl_exit+75577
+    ovl_exit+192058
     single_release+5
     ____fput+14
     task_work_run+109
@@ -104,24 +104,24 @@ Attaching 2 probes...
     syscall_exit_to_user_mode+39
     do_syscall_64+110
     entry_SYSCALL_64_after_hwframe+68
-]: 2708
+]: 2814
 
 @commopen[tracker-extract]: 1
-@commopen[systemd]: 2
-@commopen[irqbalance]: 2
-@commopen[node]: 4
-@commopen[systemd-journal]: 6
+@commopen[systemd-journal]: 9
+@commopen[systemd]: 9
+@commopen[irqbalance]: 14
 @commopen[sed]: 20
-@commopen[cat]: 54
-@commopen[ps]: 2656
-@commopen[spray_seq_op]: 2097134
+@commopen[node]: 28
+@commopen[cat]: 42
+@commopen[ps]: 2764
+@commopen[spray_seq_op]: 4194268
 
 @commrelease[tracker-extract]: 1
-@commrelease[irqbalance]: 2
-@commrelease[systemd]: 2
-@commrelease[node]: 4
-@commrelease[systemd-journal]: 6
+@commrelease[systemd-journal]: 9
+@commrelease[systemd]: 9
+@commrelease[irqbalance]: 14
 @commrelease[sed]: 20
-@commrelease[cat]: 54
-@commrelease[ps]: 2656
+@commrelease[node]: 28
+@commrelease[cat]: 42
+@commrelease[ps]: 2764
 

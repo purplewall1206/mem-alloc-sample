@@ -1,5 +1,6 @@
 # mem-alloc-sample
 
+
 ## apache: phoronix benchmark result + bpftrace sampling
 - sample-apache.(pdf|cvs): apache benchmark
 - sample.log: bpftrace sample log
@@ -66,7 +67,7 @@ python3 -c 'print((664959968*4096)/(2**30))'
 ## spray: seq_operation spray + bpftrace sampling
 
 - spray_seq_op.c: fork 32 process to spray `seq_operations`, each process spray 1048569 files at most.
-- sample.log: bpftrace allocating log(not accurate! OOM killer kills everything)
+- sample.log: bpftrace allocating log(only for 4 threads, under 32 threads OOM killer kills everything)
 - dmesg.log: OOM killer log
 
 4000MB memory VM, memory exhausts in few seconds.
