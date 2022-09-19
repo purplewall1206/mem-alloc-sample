@@ -1,0 +1,31 @@
+sample-apache
+Intel Core i5-12600K testing with a Onda ONDA MJZ690 (5.23 BIOS) and Intel ADL-S GT1 3GB on Ubuntu 21.10 via the Phoronix Test Suite.
+
+ ,,"Intel Core i5-12600K - Intel ADL-S GT1 3GB - Onda"
+Processor,,Intel Core i5-12600K @ 6.30GHz (10 Cores / 16 Threads)
+Motherboard,,Onda ONDA MJZ690 (5.23 BIOS)
+Chipset,,Intel Device 7aa7
+Memory,,16GB
+Disk,,1024GB INTEL SSDPEKNU010TZ
+Graphics,,Intel ADL-S GT1 3GB (1450MHz)
+Audio,,Realtek ALC897
+Monitor,,DELL E2220H + DELL P2319H
+Network,,Realtek RTL8111/8168/8411
+OS,,Ubuntu 21.10
+Kernel,,5.13.0-52-generic (x86_64)
+Desktop,,GNOME Shell 40.5
+Display Server,,X Server 1.20.13 + Wayland
+OpenGL,,4.6 Mesa 21.2.6
+Vulkan,,1.2.182
+Compiler,,GCC 11.2.0 + Clang 13.0.0-2 + LLVM 13.0.0
+File-System,,ext4
+Screen Resolution,,3840x1178
+
+ ,,"Intel Core i5-12600K - Intel ADL-S GT1 3GB - Onda"
+"Apache HTTP Server - Concurrent Requests: 1 (Reqs/sec)",HIB,112844.72
+"Apache HTTP Server - Concurrent Requests: 20 (Reqs/sec)",HIB,481138.86
+"Apache HTTP Server - Concurrent Requests: 100 (Reqs/sec)",HIB,482373.83
+"Apache HTTP Server - Concurrent Requests: 200 (Reqs/sec)",HIB,474182.87
+"Apache HTTP Server - Concurrent Requests: 500 (Reqs/sec)",HIB,461419.52
+"Apache HTTP Server - Concurrent Requests: 1000 (Reqs/sec)",HIB,449572.42
+

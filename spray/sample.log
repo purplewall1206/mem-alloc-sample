@@ -1,0 +1,127 @@
+Attaching 2 probes...
+@btopen[
+    cleanup_module+328175
+    cleanup_module+328175
+    cleanup_module+332536
+    single_open+5
+    stat_open+47
+    proc_reg_open+59
+    do_dentry_open+340
+    vfs_open+45
+    do_open+517
+    path_openat+270
+    do_filp_open+162
+    do_sys_openat2+155
+    __x64_sys_openat+85
+    do_syscall_64+97
+    entry_SYSCALL_64_after_hwframe+68
+]: 11
+@btopen[
+    cleanup_module+328175
+    cleanup_module+328175
+    cleanup_module+332536
+    single_open+5
+    proc_reg_open+155
+    do_dentry_open+340
+    vfs_open+45
+    do_open+517
+    path_openat+270
+    do_filp_open+162
+    do_sys_openat2+155
+    __x64_sys_openat+85
+    do_syscall_64+97
+    entry_SYSCALL_64_after_hwframe+68
+]: 26
+@btopen[
+    cleanup_module+328175
+    cleanup_module+328175
+    cleanup_module+332536
+    single_open+5
+    do_dentry_open+340
+    vfs_open+45
+    do_open+517
+    path_openat+270
+    do_filp_open+162
+    do_sys_openat2+155
+    __x64_sys_openat+85
+    do_syscall_64+97
+    entry_SYSCALL_64_after_hwframe+68
+]: 2099842
+
+@btrelease[
+    cleanup_module+309755
+    cleanup_module+309755
+    cleanup_module+316148
+    single_release+5
+    proc_reg_release+109
+    __fput+156
+    ____fput+14
+    task_work_run+109
+    do_exit+548
+    do_group_exit+59
+    __x64_sys_exit_group+24
+    do_syscall_64+97
+    entry_SYSCALL_64_after_hwframe+68
+]: 10
+@btrelease[
+    cleanup_module+309755
+    cleanup_module+309755
+    cleanup_module+316148
+    single_release+5
+    __fput+156
+    ____fput+14
+    task_work_run+109
+    exit_to_user_mode_loop+336
+    exit_to_user_mode_prepare+159
+    syscall_exit_to_user_mode+39
+    do_syscall_64+110
+    entry_SYSCALL_64_after_hwframe+68
+]: 11
+@btrelease[
+    cleanup_module+309755
+    cleanup_module+309755
+    cleanup_module+316148
+    single_release+5
+    proc_reg_release+109
+    __fput+156
+    ____fput+14
+    task_work_run+109
+    exit_to_user_mode_loop+336
+    exit_to_user_mode_prepare+159
+    syscall_exit_to_user_mode+39
+    do_syscall_64+110
+    entry_SYSCALL_64_after_hwframe+68
+]: 16
+@btrelease[
+    cleanup_module+309755
+    cleanup_module+309755
+    cleanup_module+316148
+    single_release+5
+    ____fput+14
+    task_work_run+109
+    exit_to_user_mode_loop+336
+    exit_to_user_mode_prepare+159
+    syscall_exit_to_user_mode+39
+    do_syscall_64+110
+    entry_SYSCALL_64_after_hwframe+68
+]: 2708
+
+@commopen[tracker-extract]: 1
+@commopen[systemd]: 2
+@commopen[irqbalance]: 2
+@commopen[node]: 4
+@commopen[systemd-journal]: 6
+@commopen[sed]: 20
+@commopen[cat]: 54
+@commopen[ps]: 2656
+@commopen[spray_seq_op]: 2097134
+
+@commrelease[tracker-extract]: 1
+@commrelease[irqbalance]: 2
+@commrelease[systemd]: 2
+@commrelease[node]: 4
+@commrelease[systemd-journal]: 6
+@commrelease[sed]: 20
+@commrelease[cat]: 54
+@commrelease[ps]: 2656
+
